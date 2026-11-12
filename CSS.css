@@ -1,0 +1,299 @@
+/* remove as margens padrão do navegador que criam a barra branca no topo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aba {
+  position: absolute;         
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: transparent; 
+  z-index: 10;
+}
+.aba-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.aba-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.15); 
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+body {
+    background-image: url(imagens/img12.jpg);
+    background: linear-gradient(to right,#EFF6FF); /*#EFF6FF /// #F0F8FF */
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+h1 {
+    background-image: url(../../OneDrive/Imagens/gif4.gif);
+    background-size: cover;
+    background-position: top;      
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 600px; 
+    border-bottom: 8px solid #c9d6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre{ 
+  background-color:#2e4a6b;
+  justify-content: center;
+  display: inline-block;
+  padding: 16px 40px;
+  border: 2px solid black;
+  color: #c9d6e8;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.educação{ 
+  background-color:#2e4a6b;
+  justify-content: center;
+  display: inline-block;
+  padding: 16px 40px;
+  border: 2px solid black;
+  color: #c9d6e8;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.habilidades{ 
+  background-color:#2e4a6b;
+  justify-content: center;
+  display: inline-block;
+  padding: 16px 40px;
+  border: 2px solid black;
+  color:  #c9d6e8;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* está mexendo na imagem de eu, o gato */
+.eu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+@keyframes float{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+/* está mexendo na imagem de eu, o gato */
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #c9d6e8;
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+    animation: float 4s ease-in-out infinite;
+}
+.nome{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+/* cargo, está mexendo no *estagiario em desenvolvimento de software* */
+.cargo {
+    background: linear-gradient(to right, #c9d6e8, #2e4a6b);
+    display: flex;
+    padding: 8px 16px; 
+    border-radius: 0px;
+    border: 3px solid #c9d6e8;
+    margin-top: 15px; 
+    justify-content: center;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.aulas{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+}
+/* Links de contatos */
+.links {
+    display: flex;        
+    justify-content: center; 
+    gap: 40px;
+    margin-top: 25px;
+}
+h3{
+    font-size: 22px;
+    color:#2d3748;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.texto_contato p{
+    font-size: 16px;
+    color:black;
+    margin-bottom: 15px;
+}
+
+/* Personalização dos links */
+a{
+    margin-bottom: 15px;
+    color: white;
+    text-decoration: 10px;
+}
+.sobre{
+    margin: 20px;
+}
+.sobreTexto{
+  text-align: left;       
+  background: #c9d6e8; 
+  border: 2px solid #2d3748;      
+  border-radius: 8px;         
+  padding: 24px;                 
+  margin-bottom: 20px;             
+  max-width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: space-between;
+  transition: all 0.4s;
+}
+
+.coluna-esquerda h3{
+    margin-top: 5px;
+    font-weight: bold;
+}
+.coluna-direita p{
+    margin-top: 5px 0;
+}
+.sobreTexto:hover{
+    transform: scale(1.05);
+}
+.sobreTextoEducação h3, h4{
+    color: #cfe0f5;  
+}
+.sobreTextoEducação{
+  text-align: left;
+  text-decoration-color: #cfe0f5;       
+  background:#8ea0b8;
+  border: 2px solid #2d3748;      
+  border-radius: 8px;         
+  padding: 24px;                 
+  margin-bottom: 20px; 
+  max-width: 68%;
+  width: 5000px;
+  margin-left: auto;
+  margin-right: auto;            
+  transition: all 0.4s;
+  background-image: url(../../OneDrive/Imagens/gif12.gif);
+  background-size: cover;
+  background-position: center;      
+  background-repeat: no-repeat;
+}
+.sobreTextoEducação:hover{
+    transform: scale(1.05);
+}
+  .aulas1,
+  .aulas2 {
+    display: flex;         
+    flex-wrap: wrap;        
+    gap: 12px;              
+    margin-bottom: 12px;     
+  }
+  .aulas1 p,
+  .aulas2 p {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(147, 197, 253, 0.5);
+    color: #cfe0f5;
+    padding: 8px 18px;
+    border-radius: 999px;   
+    font-size: 14px;
+    white-space: nowrap;    
+    margin: 0;             
+  }
+.sobreHardSkills{ 
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+
+}
+.sobreSoftSkills{
+  flex: 1;   
+  background:#c9d6e8;
+  border: 2px solid #2d3748;
+  width: 50px;
+  border-radius: 20px;
+  padding: 24px;
+  flex: 0 0 500px;
+  max-width: 55%;
+  transition: all 0.4s;
+}
+li{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.sobreSoftSkills:hover{
+    transform:scale(1.05);
+}
+.hardskills1{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+.hardskills2{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 25px;
+}
+.hardskills3{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 25px;
+}
+.skills{
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    margin-top: 25px;   
+}
+.idiomas{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 25px;
+}
+
